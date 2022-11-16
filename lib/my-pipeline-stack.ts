@@ -15,7 +15,7 @@ export class MyPipelineStack extends cdk.Stack {
       })
     });
 
-    const testingStage = pipeline.addStage(new MyPipelineAppStage(this, "testStage", {
+    const testingStage = pipeline.addStage(new MyPipelineAppStage(this, "test", {
       env: { 
         account: "460032395895", 
         region: "us-east-1"}
